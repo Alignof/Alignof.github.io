@@ -6,6 +6,10 @@ body{
 }
 
 /* t.js */
+ins,del{text-decoration:none;}
+s{display:none;}
+kbd{font-family:inherit;}
+
 .prompt{
 	display:flex;
 }
