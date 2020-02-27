@@ -14,8 +14,9 @@ kbd{font-family:inherit;}
 	display:flex;
 }
 
-.demo2{
-	color:#FFFFFF;
+.time{
+	color:#FFD700;
+	float:right;
 }
 
 .terminal{
