@@ -3,7 +3,7 @@
 $(function(){
   $(".terminal").t({
   delay:2,                   // start delay in seconds [default:0]
-  speed:50,                  // typing speed (ms) [default:50]
+  speed:40,                  // typing speed (ms) [default:50]
   speed_vary:false,          // 'human like' speed variation [default:false]
   mistype:false,	     // mistype rate: 1:N per char [default:false]
   locale:'en',               // keyboard layout (to fit mistype); supported: 'en' (english) or 'de' (german) [default:'en']
