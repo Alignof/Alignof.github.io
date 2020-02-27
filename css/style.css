@@ -1,32 +1,21 @@
 body{
-	background: #000;
+	background: #000000;
 }
 
-/* Cursor */
-
-.ityped-cursor {
-    font-size: 1.0rem;
-    opacity: 1;
-    -webkit-animation: blink 0.3s infinite;
-    -moz-animation: blink 0.3s infinite;
-    animation: blink 0.3s infinite;
-    animation-direction: alternate;
+/* t.js */
+.prompt{
+	display:flex;
 }
 
-@keyframes blink {
-    100% {
-        opacity: 0;
-    }
+.terminal{
+	color:#FFFFFF;
 }
 
-@-webkit-keyframes blink {
-    100% {
-        opacity: 0;
-    }
+.name{
+	color:#00FFFF;
 }
 
-@-moz-keyframes blink {
-    100% {
-        opacity: 0;
-    }
+.path{
+	color:#00FF00;
 }
+
