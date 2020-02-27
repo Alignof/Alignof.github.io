@@ -1,10 +1,17 @@
 body{
 	background: #000000;
+/*
+	background: #FFFFFF;
+*/
 }
 
 /* t.js */
 .prompt{
 	display:flex;
+}
+
+.demo2{
+	color:#FFFFFF;
 }
 
 .terminal{
