@@ -1,8 +1,19 @@
 //import { init } from 'ityped';
 
+const terget=document.getElementById('console')
+const head='<div><span class="name">Takana Norimasa </span>'+'<span class="path">~/portfolio > </span>';
+let tail='<span class="time">[15:50:30]</span></div>';
+
+let wait='<span class="terminal">wait...'
+let hello=head+'<span class="terminal"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</span>'+tail;
+
+terget.insertAdjacentHTML('beforeend',wait);
+terget.insertAdjacentHTML('beforeend',hello);
+
+
 $(function(){
 	$(".terminal").t({
-		delay:2,		// start delay in seconds [default:0]
+		delay:1,		// start delay in seconds [default:0]
 		speed:40,               // typing speed (ms) [default:50]
 		speed_vary:false,	// 'human like' speed variation [default:false]
 		mistype:false,		// mistype rate: 1:N per char [default:false]
@@ -19,7 +30,7 @@ $(function(){
 		// typing callback
 		typing:function(elm,chr_or_elm,left,total){},
 		// finished callback
-		fin:function(elm){}          
+		fin:function(elm){$('.terminal').find('.t-caret').css({opacity:0});}          
 
 	})
 
