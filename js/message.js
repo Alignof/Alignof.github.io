@@ -9,29 +9,25 @@ let tail='<span class="time">['+Hour+':'+Min+':'+Sec+']</span></div>';
 
 let wait='<span class="terminal">wait...</span>'
 let hello=head+'<span class="terminal"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</span>'+tail;
+let ls_root=head+'<span class="terminal">ls</span>'+tail;
+let whoami=head+'<span class="terminal">whoami</span>'+tail;
 
-function tjs_load(){
-	$(".terminal").t({
-		delay:1,		// start delay in seconds [default:0]
-		speed:40,               // typing speed (ms) [default:50]
-		speed_vary:false,	// 'human like' speed variation [default:false]
-		mistype:false,		// mistype rate: 1:N per char [default:false]
-		locale:'en',            // keyboard layout (to fit mistype); supported: 'en' (english) or 'de' (german) [default:'en']
-		caret:true,		// caret; can be HTML; associated CSS class:.t-caret; default (TRUE): ▎ (\u258e)
-		blink:true,             // blink-interval in ms; if TRUE, speed*3  [default:true]
-		blink_perm:false,       // permanent blinking? if FALSE, caret blinks only on delay/pause/finish [default:false]
-		repeat:0,               // repeat typing: if TRUE, infinite or N times [default:0]
-		tag:'span',             // wrapper tag (.t-container, .t-caret) [default:'span']
-		pause_on_click:false,   // pauses/continues typing on click/tap (elm) [default:false]
+let welcome_message='<pre><font face="DejaVu Sans Mono" color="yellow">'+
+" __          __  _                                   _                             <br>"+
+" \\ \\        / / | |                                 | |                            <br>"+
+"  \\ \\  /\\  / /__| | ___   ___ ___  _ __ ___   ___   | |_ ___                       <br>"+
+"   \\ \\/  \\/ / _ \\ |/ _ \\ / __/ _ \\| '_ ` _ \\ / _ \\  | __/ _ \\                      <br>"+
+"    \\  /\\  /  __/ | (_) | (_| (_) | | | | | |  __/  | || (_) |                     <br>"+
+"     \\/  \\/ \\___|_|\\___/ \\___\\___/|_| |_| |_|\\___|   \\__\\___/    __      _ _       <br>"+
+"                                                           | |  / _|    | (_)      <br>"+
+"                        _ __ ___  _   _    _ __   ___  _ __| |_| |_ ___ | |_  ___  <br>"+
+"                       | '_ ` _ \\| | | |  | '_ \\ / _ \\| '__| __|  _/ _ \\| | |/ _ \\ <br>"+
+"                       | | | | | | |_| |  | |_) | (_) | |  | |_| || (_) | | | (_) |<br>"+
+"                       |_| |_| |_|\\__, |  | .__/ \\___/|_|   \\__|_| \\___/|_|_|\\___/ <br>"+
+"                                   __/ |  | |                                      <br>"+
+"                                  |___/   |_|                                      </font></pre>"+
+"<pre>                                                             <font size=4 color='red'>2020.03.10 creat by Takana Norimasa</font></pre>";
 
-		// init callback (ready-to-type)
-		init:function(elm){},        
-		// typing callback
-		typing:function(elm,chr_or_elm,left,total){},
-		// finished callback
-		fin:function(elm){$('.terminal').find('.t-caret').css({opacity:0});console.log("done.")}          
-	});
-}
 
 function time_update(){
 	now=new Date();
@@ -44,10 +40,9 @@ function time_update(){
 function message(text,delay){
 	const p=new Promise((resolve,reject) => {
 		setTimeout(function(){
-			time_update();
 			console.log(tail);
+			time_update();
 			terget.insertAdjacentHTML('beforeend',text);
-			tjs_load();
 			resolve();
 		},delay);
 	});
@@ -56,8 +51,10 @@ function message(text,delay){
 
 async function main_stream(){
 	await message(wait,0);
-	await message(hello,1500);
-	await message(hello,1500);
+	await message(hello,2000);
+	await message(welcome_message,0);
+	await message(whoami,1500);
+	await message(ls_root,1500);
 }
 
 console.log("start");
