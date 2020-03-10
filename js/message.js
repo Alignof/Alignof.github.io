@@ -26,7 +26,7 @@ let welcome_message='<pre id="AA" lang="en"><font color="yellow">'+
 "                       |_| |_| |_|\\__, |  | .__/ \\___/|_|   \\__|_| \\___/|_|_|\\___/ <br>"+
 "                                   __/ |  | |                                      <br>"+
 "                                  |___/   |_|                                      </font></pre>"+
-"<pre>                                                             <font size=4 color='red'>2020.03.10 creat by Takana Norimasa</font></pre>";
+"<pre>                                                             <font size=4 color='red'>2020.03.10 create by Takana Norimasa</font></pre>";
 
 let whoami_result='<pre>';
 
@@ -56,7 +56,7 @@ async function main_stream(){
 	await message(hello,0);
 	await message(welcome_message,0);
 	await message(whoami,0);
-	//await message(ls,0);
+	await message(ls,0);
 }
 
 console.log("start");

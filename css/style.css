@@ -7,26 +7,27 @@ ins,del{text-decoration:none;}
 s{display:none;}
 kbd{font-family:inherit;}
 
-.AA{font-family: 'Lato', sans-serif;}
+/* links */
+a:link{color:#FFFFFF}
+a:visited{color:#FFFFFF;}
+a:hover{color:#ff0000;}
+a:active{color:#ff8000;}
+a{text-decoration: none;}
 
-.prompt{
-	display:flex;
-}
+/* other */
+.AA{font-family: 'Lato', sans-serif;}
+.prompt{display:flex;}
 
 .time{
 	color:#FFD700;
 	float:right;
 }
 
-.terminal{
+.terminal{color:#FFFFFF;}
+.name{color:#00FFFF;}
+.path{color:#00FF00;}
+
+#test{
 	color:#FFFFFF;
+	line-height:40%;
 }
-
-.name{
-	color:#00FFFF;
-}
-
-.path{
-	color:#00FF00;
-}
-
