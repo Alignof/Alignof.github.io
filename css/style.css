@@ -1,14 +1,13 @@
 body{
 	background: #000000;
-/*
-	background: #FFFFFF;
-*/
 }
 
 /* t.js */
 ins,del{text-decoration:none;}
 s{display:none;}
 kbd{font-family:inherit;}
+
+.AA{font-family: 'Lato', sans-serif;}
 
 .prompt{
 	display:flex;

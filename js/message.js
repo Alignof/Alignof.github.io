@@ -9,10 +9,10 @@ let tail='<span class="time">['+Hour+':'+Min+':'+Sec+']</span></div>';
 
 let wait='<span class="terminal">wait...</span>'
 let hello=head+'<span class="terminal"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</span>'+tail;
-let ls_root=head+'<span class="terminal">ls</span>'+tail;
+let ls=head+'<span class="terminal">ls</span>'+tail;
 let whoami=head+'<span class="terminal">whoami</span>'+tail;
 
-let welcome_message='<pre><font style="font-family:Courier" color="yellow">'+
+let welcome_message='<pre id="AA" lang="en"><font color="yellow">'+
 " __          __  _                                   _                             <br>"+
 " \\ \\        / / | |                                 | |                            <br>"+
 "  \\ \\  /\\  / /__| | ___   ___ ___  _ __ ___   ___   | |_ ___                       <br>"+
@@ -53,10 +53,10 @@ function message(text,delay){
 
 async function main_stream(){
 	await message(wait,0);
-	await message(hello,2000);
+	await message(hello,0);
 	await message(welcome_message,0);
-	await message(whoami,1500);
-	await message(ls_root,1500);
+	await message(whoami,0);
+	//await message(ls,0);
 }
 
 console.log("start");
