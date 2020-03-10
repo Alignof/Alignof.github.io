@@ -8,8 +8,8 @@ s{display:none;}
 kbd{font-family:inherit;}
 
 /* links */
-a:link{color:#FFFFFF}
-a:visited{color:#FFFFFF;}
+a:link{color:#FFCE7F}
+a:visited{color:#FFCE7F;}
 a:hover{color:#ff0000;}
 a:active{color:#ff8000;}
 a{text-decoration: none;}
@@ -27,7 +27,7 @@ a{text-decoration: none;}
 .name{color:#00FFFF;}
 .path{color:#00FF00;}
 
-#test{
+#about{
 	color:#FFFFFF;
-	line-height:40%;
+	line-height:60%;
 }
