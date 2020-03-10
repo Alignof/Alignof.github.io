@@ -12,7 +12,7 @@ let hello=head+'<span class="terminal"><del>Hello! Hackers!<ins>0.7</ins></del>c
 let ls_root=head+'<span class="terminal">ls</span>'+tail;
 let whoami=head+'<span class="terminal">whoami</span>'+tail;
 
-let welcome_message='<pre><font face="DejaVu Sans Mono" color="yellow">'+
+let welcome_message='<pre><font face="Courier" color="yellow">'+
 " __          __  _                                   _                             <br>"+
 " \\ \\        / / | |                                 | |                            <br>"+
 "  \\ \\  /\\  / /__| | ___   ___ ___  _ __ ___   ___   | |_ ___                       <br>"+
@@ -27,6 +27,8 @@ let welcome_message='<pre><font face="DejaVu Sans Mono" color="yellow">'+
 "                                   __/ |  | |                                      <br>"+
 "                                  |___/   |_|                                      </font></pre>"+
 "<pre>                                                             <font size=4 color='red'>2020.03.10 creat by Takana Norimasa</font></pre>";
+
+let whoami_result='<pre>';
 
 
 function time_update(){
