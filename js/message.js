@@ -48,6 +48,8 @@ let links=
 '<pre><span class="fa-stack" style="color:#4cb10d;font-size:50%"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></span><a href="https://qiita.com/Seigenkousya"> Seigenkousya</a></pre>'+
 '</div>';
 
+let ls_result='<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   <button class="cd_link" type="button">..</button>   <button class="text_link" type="button">about_me</button>   <button class="text_link" type="button">contact_and_links</button>   <button class="text_link" type="button">welcome</button>   <button class="cd_link" type="button">Project/</button>   <button class="cd_link" type="button">Hobby/</button>   <button class="cd_link" type="button">Activities/</button></pre></span></div>';
+
 function cmd(command){
 	return head+'<span class="terminal">'+command+'</span>'+tail;
 }
@@ -78,9 +80,10 @@ async function main_stream(){
 	await message(welcome_message,0);
 	await message(cmd("whoami"),0);
 	await message(about,0);
-	await message(cmd("ls"),0);
+	await message(cmd("ls -a"),0);
+	await message(ls_result,0);
 	await message(cmd("clear"),0);
-	await message(cmd("cat links"),0);
+	await message(cmd("cat contact_and_links"),0);
 	await message(links,0);
 }
 

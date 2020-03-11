@@ -1,6 +1,4 @@
-body{
-	background: #000000;
-}
+body{background: #000000;}
 
 /* t.js */
 ins,del{text-decoration:none;}
@@ -30,4 +28,21 @@ a{text-decoration: none;}
 #about{
 	color:#FFFFFF;
 	line-height:60%;
+}
+
+#ls_result{
+	color:#FFFFFF;
+	line-height:60%;
+}
+
+.cd_link{
+	border:none;
+	color:#729FCF;
+	background-color:transparent;
+}
+
+.text_link{
+	border:none;
+	color:#FFFFFF;
+	background-color:transparent;
 }
