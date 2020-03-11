@@ -49,7 +49,15 @@ let links=
 '<pre><span class="fa-stack" style="color:#4cb10d;font-size:50%"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></span><a href="https://qiita.com/Seigenkousya"> Seigenkousya</a></pre>'+
 '</div>';
 
-let ls_result='<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   <button class="cd_link" type="button">..</button>   <button class="text_link" type="button">about_me</button>   <button class="text_link" type="button">contact_and_links</button>   <button class="text_link" type="button">welcome</button>   <button class="cd_link" type="button">Project/</button>   <button class="cd_link" type="button">Hobby/</button>   <button class="cd_link" type="button">Activities/</button></pre></span></div>';
+let ls_result=
+'<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
+'<button class="cd_link" type="button" onclick="down_directry">..</button>   '+
+'<button class="text_link" type="button" onclick="about_me();">about_me</button>   '+
+'<button class="text_link" type="button" onclick="contact_and_links();">contact_and_links</button>   '+
+'<button class="text_link" type="button" onclick="welcome();">welcome</button>   '+
+'<button class="cd_link" type="button">Project/</button>   '+
+'<button class="cd_link" type="button">Hobby/</button>   '+
+'<button class="cd_link" type="button">Activities/</button></pre></span></div>';
 
 function tjs(num){
 	$((".terminal_"+num)).t({
@@ -88,16 +96,47 @@ function time_update(){
 
 function message(text,delay){
 	const p=new Promise(async(resolve,reject) => {
-		console.log(text);
 		time_update();
 		terget.insertAdjacentHTML('beforeend',text);
 		tjs(counter);
 		await new Promise(r=>setTimeout(r, delay));
 		counter++;
-
+		
+		console.log(text);
+/*
+		let element=document.getElementByClassName("msg_id");
+		element.scrollTo(0,element.offsetTop);
+*/
 		resolve();
 	});
 	return p;
+}
+
+function scroll_bottom(){
+	let element=document.documentElement;
+	let bottom=element.scrollHeight - element.clientHeight;
+	window.scroll(0, bottom);
+}
+
+async function about_me(){
+	await message(cmd("cat about_me"),2000);
+	await message(about,2000);
+	await message(cmd("ls -a"),2000);
+	await message(ls_result,0);
+}
+
+async function contact_and_links(){
+	await message(cmd("cat contact_and_links"),2000);
+	await message(links,2000);
+	await message(cmd("ls -a"),2000);
+	await message(ls_result,0);
+}
+
+async function welcome(){
+	await message(cmd("cat welcome"),2000);
+	await message(welcome_message,2000);
+	await message(cmd("ls -a"),2000);
+	await message(ls_result,0);
 }
 
 async function main_stream(){
@@ -108,9 +147,6 @@ async function main_stream(){
 	await message(about,0);
 	await message(cmd("ls -a"),2000);
 	await message(ls_result,0);
-	await message(cmd("clear"),2000);
-	await message(cmd("cat contact_and_links"),2000);
-	await message(links,0);
 }
 
 console.log("start");
