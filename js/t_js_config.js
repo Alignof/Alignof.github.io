@@ -1,5 +1,5 @@
 $(function(){
-	$(".terminal").t({
+	$("terminal").t({
 		delay:1,		// start delay in seconds [default:0]
 		speed:40,               // typing speed (ms) [default:50]
 		speed_vary:false,	// 'human like' speed variation [default:false]
