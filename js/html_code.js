@@ -14,7 +14,8 @@ let welcome_message=
 "                       |_| |_| |_|\\__, |  | .__/ \\___/|_|   \\__|_| \\___/|_|_|\\___/ <br>"+
 "                                   __/ |  | |                                      <br>"+
 "                                  |___/   |_|                                      </font></pre>"+
-"<pre>                                                             <font size=4 color='red'>2020.03.10 create by Takana Norimasa</font></pre>";
+"<pre>                                                             <font size=4 color='red'>2020.03.10 create by Takana Norimasa</font></pre>"+
+"<pre><font size=4 color='white'>Usage:	click the output of 'ls'\n	(Click .. to return to the directory one level higher)</font></pre>";
 
 let about=
 '<div id="about">'+
@@ -39,7 +40,7 @@ let links=
 
 let ls_root=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="down_directry">..</button>   '+
+'<button class="cd_link" type="button" onclick="down_directory">..</button>   '+
 '<button class="text_link" type="button" onclick="about_me();">about_me</button>   '+
 '<button class="text_link" type="button" onclick="contact_and_links();">contact_and_links</button>   '+
 '<button class="text_link" type="button" onclick="welcome();">welcome</button>   '+
