@@ -11,53 +11,6 @@ let tail='<span class="time">['+Hour+':'+Min+':'+Sec+']</span></div>';
 let wait='<span class="terminal_0"><font color="#FFFFFF">wait...</font></span>'
 let hello=head+'<span class="terminal_1"><font color="#FFFFFF"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</font></span>'+tail;
 
-let welcome_message=
-'<pre id="AA" lang="en"><font color="yellow">'+
-" __          __  _                                   _                             <br>"+
-" \\ \\        / / | |                                 | |                            <br>"+
-"  \\ \\  /\\  / /__| | ___   ___ ___  _ __ ___   ___   | |_ ___                       <br>"+
-"   \\ \\/  \\/ / _ \\ |/ _ \\ / __/ _ \\| '_ ` _ \\ / _ \\  | __/ _ \\                      <br>"+
-"    \\  /\\  /  __/ | (_) | (_| (_) | | | | | |  __/  | || (_) |                     <br>"+
-"     \\/  \\/ \\___|_|\\___/ \\___\\___/|_| |_| |_|\\___|   \\__\\___/    __      _ _       <br>"+
-"                                                           | |  / _|    | (_)      <br>"+
-"                        _ __ ___  _   _    _ __   ___  _ __| |_| |_ ___ | |_  ___  <br>"+
-"                       | '_ ` _ \\| | | |  | '_ \\ / _ \\| '__| __|  _/ _ \\| | |/ _ \\ <br>"+
-"                       | | | | | | |_| |  | |_) | (_) | |  | |_| || (_) | | | (_) |<br>"+
-"                       |_| |_| |_|\\__, |  | .__/ \\___/|_|   \\__|_| \\___/|_|_|\\___/ <br>"+
-"                                   __/ |  | |                                      <br>"+
-"                                  |___/   |_|                                      </font></pre>"+
-"<pre>                                                             <font size=4 color='red'>2020.03.10 create by Takana Norimasa</font></pre>";
-
-let about=
-'<div id="about">'+
-"<pre>Name: Takana Norimasa</pre>"+
-"<pre>Age: 18</pre>"+
-"<pre>Nationality: Japan</pre>"+
-"<pre>Affiliation: National Institute of Technology, Kisarazu College</pre>"+
-"<pre>Language: C,C++,Perl,Python,vimscript</pre>"+
-"<pre>Interests: cyber security,malware analysis,compiler,handmade cpu,I/O device,ESP32,etc...</pre>"+
-"</div>";
-
-let links=
-'<div id="about">'+
-'<pre><i class="far fa-envelope"></i> official: j17423@kisarazu.kosen-ac.jp</pre>'+
-'<pre><i class="far fa-envelope"></i> sub: neuromancer_wg@outlook.jp</pre>'+
-'<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [main/technology]:<a href="https://twitter.com/lIlIIllIIIlIlIl"> @lIlIIllIIIlIlIl</a></pre>'+
-'<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [sub/tech&anime]:<a href="https://twitter.com/Seigenkousya"> @seigenkousya</a></pre>'+
-'<pre><i class="fab fa-github-square"></i> [main/works]:<a href="https://github.com/Takana-Norimasa"> Takana-Norimasa</a></pre>'+
-'<pre><i class="fab fa-github-square"></i> [sub/hobby]:<a href="https://github.com/Seigenkousya"> Seigenkousya</a></pre>'+
-'<pre><span class="fa-stack" style="color:#4cb10d;font-size:50%"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></span><a href="https://qiita.com/Seigenkousya"> Seigenkousya</a></pre>'+
-'</div>';
-
-let ls_root=
-'<div id="ls_root"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="down_directry">..</button>   '+
-'<button class="text_link" type="button" onclick="about_me();">about_me</button>   '+
-'<button class="text_link" type="button" onclick="contact_and_links();">contact_and_links</button>   '+
-'<button class="text_link" type="button" onclick="welcome();">welcome</button>   '+
-'<button class="cd_link" type="button" onclick="project();">Project/</button>   '+
-'<button class="cd_link" type="button" onclick="hobby();">Hobby/</button>   '+
-'<button class="cd_link" type="button" onclick="activities();">Activities/</button></pre></span></div>';
 
 function tjs(num){
 	$((".terminal_"+num)).t({
@@ -121,45 +74,6 @@ function scroll_bottom(){
 	let element=document.documentElement;
 	let bottom=element.scrollHeight - element.clientHeight;
 	window.scroll(0, bottom);
-}
-
-async function about_me(){
-	await message(cmd("cat about_me"),2000);
-	await message(about,2000);
-	await message(cmd("ls -a"),2000);
-	await message(ls_root,0);
-}
-
-async function contact_and_links(){
-	await message(cmd("cat contact_and_links"),2000);
-	await message(links,2000);
-	await message(cmd("ls -a"),2000);
-	await message(ls_root,0);
-}
-
-async function welcome(){
-	await message(cmd("cat welcome"),2000);
-	await message(welcome_message,2000);
-	await message(cmd("ls -a"),2000);
-	await message(ls_root,0);
-}
-
-async function project(){
-	await message(cmd("cd Project/"),2000);
-	await message(cmd_path("Project/","ls -a"),2000);
-	await message(ls_root,0);
-}
-
-async function hobby(){
-	await message(cmd("cd Hobby/"),2000);
-	await message(cmd_path("Hobby/","ls -a"),2000);
-	await message(ls_root,0);
-}
-
-async function activities(){
-	await message(cmd("cd Activities/"),2000);
-	await message(cmd_path("Activities","ls -a"),2000);
-	await message(ls_root,0);
 }
 
 
