@@ -42,22 +42,22 @@ let links=
 '<div id="about">'+
 '<pre><i class="far fa-envelope"></i> official: j17423@kisarazu.kosen-ac.jp</pre>'+
 '<pre><i class="far fa-envelope"></i> sub: neuromancer_wg@outlook.jp</pre>'+
-'<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [main/technology]:<a href="https://twitter.com/Seigenkousya_"> @seigenkousya_</a></pre>'+
+'<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [main/technology]:<a href="https://twitter.com/lIlIIllIIIlIlIl"> @lIlIIllIIIlIlIl</a></pre>'+
 '<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [sub/tech&anime]:<a href="https://twitter.com/Seigenkousya"> @seigenkousya</a></pre>'+
 '<pre><i class="fab fa-github-square"></i> [main/works]:<a href="https://github.com/Takana-Norimasa"> Takana-Norimasa</a></pre>'+
 '<pre><i class="fab fa-github-square"></i> [sub/hobby]:<a href="https://github.com/Seigenkousya"> Seigenkousya</a></pre>'+
 '<pre><span class="fa-stack" style="color:#4cb10d;font-size:50%"><i class="fa fa-square fa-stack-2x"></i><i class="fa fa-search fa-stack-1x fa-inverse fa-2x"></i></span><a href="https://qiita.com/Seigenkousya"> Seigenkousya</a></pre>'+
 '</div>';
 
-let ls_result=
-'<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
+let ls_root=
+'<div id="ls_root"><span><pre><button class="cd_link" type="button">.</button>   '+
 '<button class="cd_link" type="button" onclick="down_directry">..</button>   '+
 '<button class="text_link" type="button" onclick="about_me();">about_me</button>   '+
 '<button class="text_link" type="button" onclick="contact_and_links();">contact_and_links</button>   '+
 '<button class="text_link" type="button" onclick="welcome();">welcome</button>   '+
-'<button class="cd_link" type="button">Project/</button>   '+
-'<button class="cd_link" type="button">Hobby/</button>   '+
-'<button class="cd_link" type="button">Activities/</button></pre></span></div>';
+'<button class="cd_link" type="button" onclick="project();">Project/</button>   '+
+'<button class="cd_link" type="button" onclick="hobby();">Hobby/</button>   '+
+'<button class="cd_link" type="button" onclick="activities();">Activities/</button></pre></span></div>';
 
 function tjs(num){
 	$((".terminal_"+num)).t({
@@ -84,6 +84,11 @@ function tjs(num){
 
 function cmd(command){
 	return head+'<span class="'+"terminal_"+counter+'">'+'<font color="#FFFFFF">'+command+'</font>'+'</span>'+tail;
+}
+
+function cmd_path(path,command){
+	let _head='<div><span class="name">Takana Norimasa </span>'+'<span class="path">~/portfolio/'+path+' > </span>';
+	return _head+'<span class="'+"terminal_"+counter+'">'+'<font color="#FFFFFF">'+command+'</font>'+'</span>'+tail;
 }
 
 function time_update(){
@@ -122,22 +127,41 @@ async function about_me(){
 	await message(cmd("cat about_me"),2000);
 	await message(about,2000);
 	await message(cmd("ls -a"),2000);
-	await message(ls_result,0);
+	await message(ls_root,0);
 }
 
 async function contact_and_links(){
 	await message(cmd("cat contact_and_links"),2000);
 	await message(links,2000);
 	await message(cmd("ls -a"),2000);
-	await message(ls_result,0);
+	await message(ls_root,0);
 }
 
 async function welcome(){
 	await message(cmd("cat welcome"),2000);
 	await message(welcome_message,2000);
 	await message(cmd("ls -a"),2000);
-	await message(ls_result,0);
+	await message(ls_root,0);
 }
+
+async function project(){
+	await message(cmd("cd Project/"),2000);
+	await message(cmd_path("Project/","ls -a"),2000);
+	await message(ls_root,0);
+}
+
+async function hobby(){
+	await message(cmd("cd Hobby/"),2000);
+	await message(cmd_path("Hobby/","ls -a"),2000);
+	await message(ls_root,0);
+}
+
+async function activities(){
+	await message(cmd("cd Activities/"),2000);
+	await message(cmd_path("Activities","ls -a"),2000);
+	await message(ls_root,0);
+}
+
 
 async function main_stream(){
 	await message(wait,2800);
@@ -146,7 +170,7 @@ async function main_stream(){
 	await message(cmd("whoami"),2000);
 	await message(about,0);
 	await message(cmd("ls -a"),2000);
-	await message(ls_result,0);
+	await message(ls_root,0);
 }
 
 console.log("start");
