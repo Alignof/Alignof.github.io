@@ -34,6 +34,8 @@ async function tree(){
 }
 
 
+
+
 /*------------------Project--------------------------*/
 async function project(){
 	await message(cmd("cd Project/"),2000);
@@ -105,6 +107,8 @@ async function CTF(){
 }
 
 
+
+
 /*------------------Hobby--------------------------*/
 async function hobby(){
 	await message(cmd("cd Hobby/"),2000);
@@ -129,6 +133,8 @@ async function motor_sports(){
 	await message(cmd_path("Hobby","ls -a"),2000);
 	await message(ls_hobby,0);
 }
+
+
 
 
 /*------------------Seigenkousya--------------------------*/
