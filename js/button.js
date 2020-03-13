@@ -1,4 +1,4 @@
-
+/*------------------root--------------------------*/
 async function about_me(){
 	await message(cmd("cat about_me"),2000);
 	await message(about,2000);
@@ -26,6 +26,13 @@ async function welcome(){
 	await message(ls_root,0);
 }
 
+async function tree(){
+	await message(cmd("tree -C"),2000);
+	await message(tree_result,2000);
+	await message(cmd("ls -a"),2000);
+	await message(ls_root,0);
+}
+
 async function project(){
 	await message(cmd("cd Project/"),2000);
 	await message(cmd_path("Project","ls -a"),2000);
@@ -44,6 +51,7 @@ async function activities(){
 	await message(ls_activities,0);
 }
 
+/*------------------Hobby--------------------------*/
 async function SIN_dir(){
 	await message(cmd("cd Seigenkousya/"),2000);
 	await message(cmd_path("Seigenkousya","ls -a"),2000);

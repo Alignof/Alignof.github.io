@@ -44,6 +44,7 @@ let ls_root=
 '<button class="text_link" type="button" onclick="about_me();">about_me</button>   '+
 '<button class="text_link" type="button" onclick="contact_and_links();">contact_and_links</button>   '+
 '<button class="text_link" type="button" onclick="welcome();">welcome</button>   '+
+'<button class="text_link" style="color:#8AE234" type="button" onclick="tree();">tree.sh</button>   '+
 '<button class="cd_link" type="button" onclick="project();">Project/</button>   '+
 '<button class="cd_link" type="button" onclick="activities();">Activities/</button>   '+
 '<button class="cd_link" type="button" onclick="hobby();">Hobby/</button></pre></span></div>';
@@ -86,5 +87,35 @@ let ls_seigenkousya=
 '<button class="text_link" type="button" onclick="thesis();">doubiju_thesis</button>   '+
 '<button class="text_link" type="button" onclick="kirara_data();">KiraraData.com</button>   '+
 '</pre></span></div>';
+
+let tree_result=
+'<pre style="color:white;font-size:110%">'+
+'.\n'+
+'├── about_me\n'+
+'├── contact_and_links\n'+
+'├── welcome\n'+
+'├── tree.sh\n'+
+'├── <font color="#729FCF">Project/</font>\n'+
+'│   ├── IO_Unit\n'+
+'│   ├── Timer_Stoper\n'+
+'│   └── Repositories\n'+
+'├── <font color="#729FCF">Activities/</font>\n'+
+'│   ├── <font color="#8AE234">chronlogy</font>\n'+
+'│   ├── SecHack365\n'+
+'│   ├── Guardian project\n'+
+'│   ├── LoRaWAN IoT Hackathon\n'+
+'│   ├── Atcoder\n'+
+'│   └── CTF\n'+
+'└── <font color="#729FCF">Hobby/</font>\n'+
+'	├── comic\n'+
+'	├── anime\n'+
+'	├── motor sports\n'+
+'	└── <font color="#729FCF">Seigenkousya/</font>\n'+
+'	    ├── about us\n'+
+'	    ├── blog\n'+
+'	    ├── <font color="red">seigenkousya.html</font>\n'+
+'	    ├── Overview_of_modern_lilics\n'+
+'	    ├── doubiju_thesis\n'+
+'	    └── KiraraData.com';
 
 
