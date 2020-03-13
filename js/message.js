@@ -82,7 +82,6 @@ function reload_iframely(){
 }
 
 async function main_stream(){
-/*
 	await message(wait,2800);
 	await message(hello,4600);
 	await message(welcome_message,0);
@@ -90,8 +89,6 @@ async function main_stream(){
 	await message(about,0);
 	await message(cmd("ls -a"),2000);
 	await message(ls_root,0);
-*/
-	await message(ls_project,0);
 }
 
 console.log("start");

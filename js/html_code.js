@@ -62,8 +62,8 @@ let page_IO_Unit=
 '<h2>I/O Unit project</h2>'+
 '<h3>about</h3>'+
 '<pre style="line-height:120%">'+
-'I/O Unit project は既存の入出力装置のセキュリティ上の欠点を克服するようなセキュアな入出力装置の開発を目的としたプロジェクトです。'+
-'セキュアな入力装置の開発、セキュアな出力装置の開発、2つを組み合わせたI/O Unitの開発の3つから構成されます。'+
+'I/O Unit project は既存の入出力装置のセキュリティ上の欠点を克服するようなセキュアな入出力装置の開発を目的としたプロジェクトです。\n'+
+'セキュアな入力装置の開発、セキュアな出力装置の開発、2つを組み合わせたI/O Unitの開発の3つから構成されます。\n'+
 '</pre>'+
 '<ul>'+
 '	<li><span>ショルダーハッキングや画面ののぞき見のリスクを低減できるようなセキュアな入出力装置を開発する</span></li>'+
@@ -73,7 +73,7 @@ let page_IO_Unit=
 '<pre style="line-height:120%">'+
 'の3つが目標です。'+
 '</pre>'+
-'<h3>repojitory</h3>'+
+'<h3>repository</h3>'+
 '<pre style="line-height:120%">'+
 '詳しくプロジェクトの概要とデバイスの作り方についてはgithubの<a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit/">Readme</a>と<a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit/wiki">wiki</a>を参照。'+
 '</pre>'+
