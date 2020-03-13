@@ -45,6 +45,8 @@ async function project(){
 
 async function IO_Unit(){
 	await message(cmd_path("Project","cat I/O Unit"),2000);
+	await message(page_IO_Unit,0);
+	await reload_iframely();
 	await message(cmd_path("Project","ls -a"),2000);
 	await message(ls_project,0);
 }

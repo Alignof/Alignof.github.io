@@ -27,11 +27,11 @@ function tjs(num){
 		pause_on_click:false,   // pauses/continues typing on click/tap (elm) [default:false]
 
 		// init callback (ready-to-type)
-		init:function(elm){console.log("started.")},        
+		init:function(elm){},        
 		// typing callback
 		typing:function(elm,chr_or_elm,left,total){},
 		// finished callback
-		fin:function(elm){$('terminal_'+num).find('.t-caret').css({opacity:0});console.log("done.")}          
+		fin:function(elm){$('terminal_'+num).find('.t-caret').css({opacity:0});}          
 	})
 }
 
@@ -60,7 +60,6 @@ function message(text,delay){
 		await new Promise(r=>setTimeout(r, delay));
 		counter++;
 		
-		console.log(text);
 /*
 		let element=document.getElementByClassName("msg_id");
 		element.scrollTo(0,element.offsetTop);
@@ -76,8 +75,14 @@ function scroll_bottom(){
 	window.scroll(0, bottom);
 }
 
+function reload_iframely(){
+	let el=document.createElement('script');
+	el.src="https://cdn.iframe.ly/embed.js";
+	document.body.appendChild(el);
+}
 
 async function main_stream(){
+/*
 	await message(wait,2800);
 	await message(hello,4600);
 	await message(welcome_message,0);
@@ -85,6 +90,8 @@ async function main_stream(){
 	await message(about,0);
 	await message(cmd("ls -a"),2000);
 	await message(ls_root,0);
+*/
+	await message(ls_project,0);
 }
 
 console.log("start");

@@ -12,6 +12,15 @@ a:hover{color:#ff0000;}
 a:active{color:#ff8000;}
 a{text-decoration: none;}
 
+/*ul li*/
+ul li, ol li{
+	color:yellow;
+	padding-top:5px;
+}
+li span{
+	color:white;
+}
+
 /* other */
 .AA{font-family: 'Lato', sans-serif;}
 .prompt{display:flex;}

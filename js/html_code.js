@@ -57,6 +57,38 @@ let ls_project=
 '<button class="text_link" type="button" onclick="repojitories();">Repositories</button>   '+
 '</pre></span></div>';
 
+let page_IO_Unit=
+'<div style="color:white;font-size:100%;">'+
+'<h2>I/O Unit project</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'I/O Unit project は既存の入出力装置のセキュリティ上の欠点を克服するようなセキュアな入出力装置の開発を目的としたプロジェクトです。'+
+'セキュアな入力装置の開発、セキュアな出力装置の開発、2つを組み合わせたI/O Unitの開発の3つから構成されます。'+
+'</pre>'+
+'<ul>'+
+'	<li><span>ショルダーハッキングや画面ののぞき見のリスクを低減できるようなセキュアな入出力装置を開発する</span></li>'+
+'	<li><span>開発した入力装置と出力装置をまとめて1つのデバイスとして機能させ、処理装置から入出力装置を独立させることでより自由なデバイスの形を模索する</span></li>'+
+'	<li><span>開発したデバイスの詳細な作り方を公開しプログラムから工作、電子回路まで学べるような学習サイトを作成、公開する</span></li>'+
+'</ul>'+
+'<pre style="line-height:120%">'+
+'の3つが目標です。'+
+'</pre>'+
+'<h3>repojitory</h3>'+
+'<pre style="line-height:120%">'+
+'詳しくプロジェクトの概要とデバイスの作り方についてはgithubの<a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit/">Readme</a>と<a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit/wiki">wiki</a>を参照。'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 100px; width:500px; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FSecure_I-O_Unit&key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div>'+
+'<h3>SecHack365</h3>'+
+'<pre style="line-height:120%">'+
+'このプロジェクトは2019年度SecHack365の活動の一環として始まりました。\n'+
+'ポスターは<a>こちら</a>。（※発表され次第ここに載せます）\n'+
+'SecHack365に関しては以下のリンクを参照。'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 100px; width:500px; padding-bottom: 0;"><a href="https://sechack365.nict.go.jp/" data-iframely-url="https://cdn.iframe.ly/crKU29v?iframe=card-small"></a></div></div>'+
+'<pre style="line-height:120%">'+
+'僕自身のSecHackでの活動については、~/portfolio/Activity/SecHack365に書いてあります。'+
+'</pre>';
+
 let ls_activities=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
 '<button class="cd_link" type="button" onclick="back_to_root(\'Activities\');">..</button>   '+
