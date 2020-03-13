@@ -133,7 +133,7 @@ async function motor_sports(){
 
 /*------------------Seigenkousya--------------------------*/
 async function SIN_dir(){
-	await message(cmd("cd Seigenkousya/"),2300);
+	await message(cmd_path("Hobby/","cd Seigenkousya/"),2300);
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }
@@ -176,7 +176,7 @@ async function kirara_data(){
 }
 
 async function back_to_hobby(){
-	await message(cmd_path("Hobby/Seigenkousya","cd ..",2000);
+	await message(cmd_path("Hobby/Seigenkousya","cd ..",2000));
 	await message(cmd_path("Hobby","ls -a"),2000);
 	await message(ls_hobby,0);
 }
