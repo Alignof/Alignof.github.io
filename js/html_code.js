@@ -107,15 +107,15 @@ let tree_result=
 '│   ├── Atcoder\n'+
 '│   └── CTF\n'+
 '└── <font color="#729FCF">Hobby/</font>\n'+
-'	├── comic\n'+
-'	├── anime\n'+
-'	├── motor sports\n'+
-'	└── <font color="#729FCF">Seigenkousya/</font>\n'+
-'	    ├── about us\n'+
-'	    ├── blog\n'+
-'	    ├── <font color="red">seigenkousya.html</font>\n'+
-'	    ├── Overview_of_modern_lilics\n'+
-'	    ├── doubiju_thesis\n'+
-'	    └── KiraraData.com';
+'     ├── comic\n'+
+'     ├── anime\n'+
+'     ├── motor sports\n'+
+'     └── <font color="#729FCF">Seigenkousya/</font>\n'+
+'          ├── about us\n'+
+'          ├── blog\n'+
+'          ├── <font color="red">seigenkousya.html</font>\n'+
+'          ├── Overview_of_modern_lilics\n'+
+'          ├── doubiju_thesis\n'+
+'          └── KiraraData.com';
 
 
