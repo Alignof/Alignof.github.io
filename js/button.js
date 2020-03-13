@@ -6,6 +6,12 @@ async function about_me(){
 	await message(ls_root,0);
 }
 
+async function back_to_root(path){
+	await message(cmd_path(path,"cd .."),2000);
+	await message(cmd("ls -a"),2000);
+	await message(ls_root,0);
+}
+
 async function contact_and_links(){
 	await message(cmd("cat contact_and_links"),2000);
 	await message(links,2000);

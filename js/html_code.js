@@ -50,7 +50,7 @@ let ls_root=
 
 let ls_project=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="back_to_root();">..</button>   '+
+'<button class="cd_link" type="button" onclick="back_to_root(\'Project\');">..</button>   '+
 '<button class="text_link" type="button" onclick="IO_Unit();">I/O_Unit</button>   '+
 '<button class="text_link" type="button" onclick="timer_stoper();">Timer_Stoper</button>   '+
 '<button class="text_link" type="button" onclick="repojitories();">Repositories</button>   '+
@@ -58,8 +58,8 @@ let ls_project=
 
 let ls_activities=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="back_to_root();">..</button>   '+
-'<button class="text_link" style="color:green" type="button" onclick="chronology();">chronology</button>   '+
+'<button class="cd_link" type="button" onclick="back_to_root(\'Activities\');">..</button>   '+
+'<button class="text_link" style="color:#8AE234" type="button" onclick="chronology();">chronology</button>   '+
 '<button class="text_link" type="button" onclick="sechack365();">SecHack365</button>   '+
 '<button class="text_link" type="button" onclick="guardian();">Guardian project</button>   '+
 '<button class="text_link" type="button" onclick="IoT_Hackathon();">LoRaWAN IoT Hackathon</button>   '+
@@ -69,7 +69,7 @@ let ls_activities=
 
 let ls_hobby=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="back_to_root();">..</button>   '+
+'<button class="cd_link" type="button" onclick="back_to_root(\'Hobby\');">..</button>   '+
 '<button class="text_link" type="button" onclick="comic();">comic</button>   '+
 '<button class="text_link" type="button" onclick="anime();">anime</button>   '+
 '<button class="text_link" type="button" onclick="motor_sports();">motor sports</button>   '+
@@ -78,7 +78,7 @@ let ls_hobby=
 
 let ls_seigenkousya=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="back_to_root();">..</button>   '+
+'<button class="cd_link" type="button" onclick="back_to_root(\'Seigenkousya\');">..</button>   '+
 '<button class="text_link" type="button" onclick="about_SIN();">about_us</button>   '+
 '<button class="text_link" type="button" onclick="blog();">blog</button>   '+
 '<button class="text_link" style="color:red" type="button" onclick="SIN_link();">Seigenkousya.html</button>   '+
@@ -86,3 +86,5 @@ let ls_seigenkousya=
 '<button class="text_link" type="button" onclick="thesis();">doubiju_thesis</button>   '+
 '<button class="text_link" type="button" onclick="kirara_data();">KiraraData.com</button>   '+
 '</pre></span></div>';
+
+
