@@ -79,7 +79,7 @@ let ls_hobby=
 
 let ls_seigenkousya=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
-'<button class="cd_link" type="button" onclick="back_to_root(\'Seigenkousya\');">..</button>   '+
+'<button class="cd_link" type="button" onclick="back_to_hobby();">..</button>   '+
 '<button class="text_link" type="button" onclick="about_SIN();">about_us</button>   '+
 '<button class="text_link" type="button" onclick="blog();">blog</button>   '+
 '<button class="text_link" style="color:red" type="button" onclick="SIN_link();">Seigenkousya.html</button>   '+
@@ -96,7 +96,7 @@ let tree_result=
 '├── welcome\n'+
 '├── tree.sh\n'+
 '├── <font color="#729FCF">Project/</font>\n'+
-'│   ├── IO_Unit\n'+
+'│   ├── IO Unit\n'+
 '│   ├── Timer_Stoper\n'+
 '│   └── Repositories\n'+
 '├── <font color="#729FCF">Activities/</font>\n'+
