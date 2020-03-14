@@ -53,7 +53,7 @@ let ls_project=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
 '<button class="cd_link" type="button" onclick="back_to_root(\'Project\');">..</button>   '+
 '<button class="text_link" type="button" onclick="IO_Unit();">I/O_Unit</button>   '+
-'<button class="text_link" type="button" onclick="timer_stoper();">Timer_Stoper</button>   '+
+'<button class="text_link" type="button" onclick="timer_stoper();">Juggernaut</button>   '+
 '<button class="text_link" type="button" onclick="repojitories();">Repositories</button>   '+
 '</pre></span></div>';
 
@@ -88,6 +88,75 @@ let page_IO_Unit=
 '<pre style="line-height:120%">'+
 '僕自身のSecHackでの活動については、~/portfolio/Activity/SecHack365に書いてあります。'+
 '</pre>';
+
+let page_jaggernaut=
+'<div style="color:white;font-size:100%;">'+
+'<h2>Juggernaut</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'Juggernautは時限爆弾型のタイマーの構造を与えられた回路図とプログラムから推測し、規定内の操作を行うことでタイマーを停止させる（解除する）競技です。\n'+
+'解除する側には回路図やデータシートを読む力、プログラムを素早く間違いなく解読する力が求められ、教育面での効果が期待できます。\n'+
+'解除するまでの時間を競う競技型や、お互いに装置を作って解除しあってワイワイするイベント型を想定しています。\n'+
+'</pre>'+
+'<h3>rule</h3>'+
+'主なルールは以下の通りです。'+
+'<ul>'+
+'	<li><span>競技に使われるタイマー型の電子回路を「装置」と呼ぶ</span></li>'+
+'	<li><span>装置を用意する側をgiver、装置を解除する側をsolverと呼ぶ</span></li>'+
+'	<li><span>装置に取り付けられたタイマーが0になる前にプログラムで決められた状態になった場合「解除」となる</span></li>'+
+'	<li><span>装置に取り付けられたタイマーが0になるもしくはプログラムで定められた手順から外れた状態になった場合「解除失敗」となる</span></li>'+
+'	<li><span>装置は以下の部分に分けられる</span></li>'+
+'	<ul>'+
+'		<li><span>規定のマイコンを載せた制御部</span></li>'+
+'		<li><span>6桁の7セグLEDや解除状態を示すLEDなど競技進行に必要な部品をを載せた表示部</span></li>'+
+'		<li><span>ユーザ(giver)が自由に回路を組み制御部に入力を与える競技部</span></li>'+
+'	</ul>'+
+'	<li><span>大まかな禁止事項は以下の通り</span></li>'+
+'	<ul>'+
+'		<li><span>装置には必ず規定で定められた共通の表示部を設置しなくてはならない</span></li>'+
+'		<li><span>solverは装置の表示部に触れてはならない</span></li>'+
+'		<li><span>事前に決められた本数のワイヤを超えて使用することはできない</span></li>'+
+'		<li><span>部品や配線の確認が困難となるような妨害行為（型番や結線部を何かで隠す）は認められない</span></li>'+
+'	</ul>'+
+'</ul>'+
+'<pre style="line-height:120%">'+
+'詳しくはgithubのリポジトリを参照してください。'+
+'</pre>'+
+'<h3>repository</h3>'+
+'<pre style="line-height:120%">'+
+'製作中...'+
+'正式なルールは<a href=\"\">wiki（準備中）</a>を参照。'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:500px; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/Juggernaut" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FJuggernaut&key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'</div>';
+
+let page_repositories=
+'<div style="color:white;font-size:100%;">'+
+'<h2>Repositories</h2>'+
+'<h3>about</h3>'+
+'すべてのプロジェクトの一覧です。'+
+'<h3>I/O Unit</h3>'+
+'<pre style="line-height:120%">'+
+'I/O Unit project は既存の入出力装置のセキュリティ上の欠点を克服するようなセキュアな入出力装置の開発を目的としたプロジェクトです。\n'+
+'セキュアな入力装置の開発、セキュアな出力装置の開発、2つを組み合わせたI/O Unitの開発の3つから構成されます。\n'+
+'</pre>'+
+'<ul>'+
+'	<li><span>ショルダーハッキングや画面ののぞき見のリスクを低減できるようなセキュアな入出力装置を開発する</span></li>'+
+'	<li><span>開発した入力装置と出力装置をまとめて1つのデバイスとして機能させ、処理装置から入出力装置を独立させることでより自由なデバイスの形を模索する</span></li>'+
+'	<li><span>開発したデバイスの詳細な作り方を公開しプログラムから工作、電子回路まで学べるような学習サイトを作成、公開する</span></li>'+
+'</ul>'+
+'<pre style="line-height:120%">'+
+'の3つが目標です。'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 100px; width:500px; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FSecure_I-O_Unit&key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div>'+
+'<h3>Juggernaut</h3>'+
+'<pre style="line-height:120%">'+
+'Juggernautは時限爆弾型のタイマーの構造を与えられた回路図とプログラムから推測し、規定内の操作を行うことでタイマーを停止させる（解除する）競技です。\n'+
+'解除する側には回路図やデータシートを読む力、プログラムを素早く間違いなく解読する力が求められ、教育面での効果が期待できます。\n'+
+'解除するまでの時間を競う競技型や、お互いに装置を作って解除しあってワイワイするイベント型を想定しています。\n'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:500px; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/Juggernaut" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FJuggernaut&key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'</div>';
 
 let ls_activities=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
@@ -129,7 +198,7 @@ let tree_result=
 '├── tree.sh\n'+
 '├── <font color="#729FCF">Project/</font>\n'+
 '│   ├── IO Unit\n'+
-'│   ├── Timer_Stoper\n'+
+'│   ├── Juggernaut\n'+
 '│   └── Repositories\n'+
 '├── <font color="#729FCF">Activities/</font>\n'+
 '│   ├── <font color="#8AE234">chronlogy</font>\n'+

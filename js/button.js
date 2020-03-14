@@ -52,13 +52,17 @@ async function IO_Unit(){
 }
 
 async function timer_stoper(){
-	await message(cmd_path("Project","cat Timer_Stoper"),2000);
+	await message(cmd_path("Project","cat Juggernaut"),2000);
+	await message(page_jaggernaut,0);
+	await reload_iframely();
 	await message(cmd_path("Project","ls -a"),2000);
 	await message(ls_project,0);
 }
 
 async function repojitories(){
 	await message(cmd_path("Project","cat Repositories"),2000);
+	await message(page_repositories,0);
+	await reload_iframely();
 	await message(cmd_path("Project","ls -a"),2000);
 	await message(ls_project,0);
 }
