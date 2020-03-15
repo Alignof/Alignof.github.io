@@ -62,6 +62,7 @@ async function timer_stoper(){
 async function repojitories(){
 	await message(cmd_path("Project","cat Repositories"),2000);
 	await message(page_repositories,0);
+	await reload_contribution();
 	await reload_iframely();
 	await message(cmd_path("Project","ls -a"),2000);
 	await message(ls_project,0);

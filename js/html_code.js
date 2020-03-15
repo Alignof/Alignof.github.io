@@ -156,6 +156,8 @@ let page_repositories=
 '解除するまでの時間を競う競技型や、お互いに装置を作って解除しあってワイワイするイベント型を想定しています。\n'+
 '</pre>'+
 '<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:500px; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/Juggernaut" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FJuggernaut&key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<h3>contributions</h3>'+
+'<a href="http://github.com/Takana-Norimasa" class="gh-contributions" data-gh-username="Takana-Norimasa" target="_blank">Takana-Norimasa\'s contributions</a>'+
 '</div>';
 
 let ls_activities=

@@ -77,7 +77,13 @@ function scroll_bottom(){
 
 function reload_iframely(){
 	let el=document.createElement('script');
-	el.src="https://cdn.iframe.ly/embed.js";
+	el.src="js/embed.js";
+	document.body.appendChild(el);
+}
+
+function reload_contribution(){
+	let el=document.createElement('script');
+	el.src="js/widget.min.js";
 	document.body.appendChild(el);
 }
 
