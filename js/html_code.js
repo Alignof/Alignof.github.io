@@ -23,6 +23,7 @@ let about=
 "<pre>Age: 18</pre>"+
 "<pre>Nationality: Japan</pre>"+
 "<pre>Affiliation: National Institute of Technology, Kisarazu College</pre>"+
+"<pre>Blog: <a href='https://takana-norimasa.github.io/blog/'>https://takana-norimasa.github.io/blog/</a></pre>"+
 "<pre>Language: C,C++,Perl,Python,vimscript</pre>"+
 "<pre>Interests: cyber security,malware analysis,compiler,handmade cpu,I/O device,ESP32,etc...</pre>"+
 "</div>";

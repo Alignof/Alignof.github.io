@@ -57,22 +57,22 @@ function message(text,delay){
 		time_update();
 		terget.insertAdjacentHTML('beforeend',text);
 		tjs(counter);
+		scroll_bottom();
+		
 		await new Promise(r=>setTimeout(r, delay));
 		counter++;
-		
-/*
-		let element=document.getElementByClassName("msg_id");
-		element.scrollTo(0,element.offsetTop);
-*/
 		resolve();
 	});
 	return p;
 }
 
 function scroll_bottom(){
-	let element=document.documentElement;
-	let bottom=element.scrollHeight - element.clientHeight;
-	window.scroll(0, bottom);
+		const targetElement=document.getElementById('blank');
+		const rectTop=targetElement.getBoundingClientRect().top
+		const offsetTop=window.pageYOffset
+		const buffer=50
+		const top=rectTop + offsetTop - buffer
+		window.scrollTo({top,behavior: "smooth"});
 }
 
 function reload_iframely(){

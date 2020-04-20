@@ -34,6 +34,10 @@ li span{
 .name{color:#00FFFF;}
 .path{color:#00FF00;}
 
+#blank{
+	padding-top:60px;
+}
+
 #about{
 	color:#FFFFFF;
 	line-height:60%;
