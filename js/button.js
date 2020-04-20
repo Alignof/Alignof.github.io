@@ -135,12 +135,16 @@ async function hobby(){
 
 async function comic(){
 	await message(cmd_path("Hobby","cat comic"),2000);
+	await message(page_comic,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby","ls -a"),2000);
 	await message(ls_hobby,0);
 }
 
 async function anime(){
 	await message(cmd_path("Hobby","cat anime"),2000);
+	await message(page_anime,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby","ls -a"),2000);
 	await message(ls_hobby,0);
 }
