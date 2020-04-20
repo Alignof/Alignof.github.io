@@ -85,24 +85,32 @@ async function chronology(){
 
 async function sechack365(){
 	await message(cmd_path("Activities","cat SecHack365"),2000);
+	await message(page_sechack365,0);
+	await reload_iframely();
 	await message(cmd_path("Activities","ls -a"),2000);
 	await message(ls_activities,0);
 }
 
 async function guardian(){
 	await message(cmd_path("Activities","cat Guardian Project"),2300);
+	await message(page_gurdian_project,0);
+	await reload_iframely();
 	await message(cmd_path("Activities","ls -a"),2000);
 	await message(ls_activities,0);
 }
 
 async function IoT_Hackathon(){
 	await message(cmd_path("Activities","cat LoRaWAN IoT Hackathon"),2500);
+	await message(page_iot_hackathon,0);
+	await reload_iframely();
 	await message(cmd_path("Activities","ls -a"),2000);
 	await message(ls_activities,0);
 }
 
 async function atcoder(){
 	await message(cmd_path("Activities","cat Atcoder"),2000);
+	await message(page_atcoder,0);
+	await reload_iframely();
 	await message(cmd_path("Activities","ls -a"),2000);
 	await message(ls_activities,0);
 }

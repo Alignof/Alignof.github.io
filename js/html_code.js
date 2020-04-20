@@ -171,6 +171,69 @@ let ls_activities=
 '<button class="text_link" type="button" onclick="CTF();">CTF</button>   '+
 '</pre></span></div>';
 
+let page_sechack365=
+'<div style="color:white;font-size:100%;">'+
+'<h2>SecHack365</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'2019年度SecHack365の思索駆動コースに選出され「セキュアな入出力装置の開発」というテーマで一年間開発を行っていました。\n'+
+'SecHack365に関しては以下のリンクを参照してください。'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 100px; width:500px; padding-bottom: 0;"><a href="https://sechack365.nict.go.jp/" data-iframely-url="https://cdn.iframe.ly/crKU29v?iframe=card-small"></a></div></div>'+
+'<pre style="line-height:120%">'+
+'参加録はこちら。'+
+"<a href='https://takana-norimasa.github.io/blog/posts/sechack365/'>SecHack365 '19 参加録 – 303 See Other</a>"+
+'</pre>'+
+'<h3>output</h3>'+
+'<pre style="line-height:120%">'+
+'詳しくプロジェクトの概要とデバイスの作り方についてはgithubの<a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit/">Readme</a>と<a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit/wiki">wiki</a>を参照。'+
+'</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 80px; width:500px; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/Secure_I-O_Unit" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FSecure_I-O_Unit&key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div>'+
+'<pre style="line-height:120%">'+
+'ポスターは<a href="https://sechack365.nict.go.jp/achievement/2019/index.html#c04">こちら</a>。'+
+'</pre></div>';
+
+let page_gurdian_project=
+'<div style="color:white;font-size:100%;">'+
+'<h2>Guardian Project</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'2018年 1/15/ - 1/17 でトレンドマイクロ社のガーディアンプロジェクトというイベントに参加してきました。\n'+
+'リンク：<a href="https://www.trendmicro.com/ja_jp/campaigns/guardian.html">https://www.trendmicro.com/ja_jp/campaigns/guardian.html</a>\n\n'+
+'基本的にはインシデントレスポンスをメインとして実践的演習でした。\n'+
+'実際に顧客との対応の部分までしっかり演習ができていてすっごく良かったです。\n'+
+'ログ解析から顧客対応、プレゼンテーションまで多くのことを学べました。\n'+
+'特にプレゼンテーションの発表の部分は今でもこの経験が大きく役立っています。\n'+
+'</pre></div>';
+
+let page_iot_hackathon=
+'<div style="color:white;font-size:100%;">'+
+'<h2>LoRaWAN IoT Hackathon</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'<a href="https://www.senseway.net/all-events/event/kasiwanoha-iot-hackathon-event/">LoRaWAN™を使った 柏の葉IoTハッカソン</a>に参加し「地域コミュニティと防災無線を兼ねた市営放送の提案」という提案でアイデア賞をいただきました。\n'+
+'受賞発表：<a href="https://www.senseway.net/all-events/event/kasiwanoha-iot-hackathon-winners/">https://www.senseway.net/all-events/event/kasiwanoha-iot-hackathon-winners/</a>\n'+
+'大会についてはこちら。</pre>\n'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://www.senseway.net/all-events/event/kasiwanoha-iot-hackathon-event/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.senseway.net%2Fall-events%2Fevent%2Fkasiwanoha-iot-hackathon-event%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8&amp;iframe=card-small"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<h3>output</h3>'+
+'<pre style="line-height:120%">'+
+'LaRaWANを使った防災無線と地域コミュニティを兼ねた地域放送を考案しました。\n'+
+'有事の際に情報化から取り残された高齢者が有用な情報にアクセスできない問題に着目し高齢者向けの情報提供の場を提案しました。\n'+
+'普段は市のお知らせや情報を発信し災害時には避難情報を掲載するなど市の情報塔として機能させその費用を普段の地域の企業の広告料で賄うことで費用の削減を狙いました。\n'+
+'市の防災無線の役割を肩代わりするだけでなく、地域活動の広告塔としての役割も果たします。\n'+
+'</pre></div>';
+
+let page_atcoder=
+'<div style="color:white;font-size:100%;">'+
+'<h2>Atcoder</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'競技プログラミングをはじめました。'+
+'自分はこういうのがすごい苦手なんだと分かりました。'+
+'これからちゃんと勉強して精進します。（猛省）'+
+'いつかはここに書いても恥ずかしくないくらいの実力になりたいですね...</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://atcoder.jp/users/Neuromancer" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fatcoder.jp%2Fusers%2FNeuromancer&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script></div>';
+
 let ls_hobby=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
 '<button class="cd_link" type="button" onclick="back_to_root(\'Hobby\');">..</button>   '+
