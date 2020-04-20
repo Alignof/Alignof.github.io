@@ -117,6 +117,8 @@ async function atcoder(){
 
 async function CTF(){
 	await message(cmd_path("Activities","cat CTF"),2000);
+	await message(page_ctf,0);
+	await reload_iframely();
 	await message(cmd_path("Activities","ls -a"),2000);
 	await message(ls_activities,0);
 }

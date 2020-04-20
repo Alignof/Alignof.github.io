@@ -234,6 +234,27 @@ let page_atcoder=
 'いつかはここに書いても恥ずかしくないくらいの実力になりたいですね...\n</pre>'+
 '<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://atcoder.jp/users/Neuromancer" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fatcoder.jp%2Fusers%2FNeuromancer&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script></div><br>';
 
+let page_ctf=
+'<div style="color:white;font-size:100%;">'+
+'<h2>CTF</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'過去に参加したCTFについて紹介します。</pre>'+
+'<h4><a href="https://sckosen2017.kisarazu.ac.jp/">KOSEN セキュリティ・コンテスト 2017</a></h4>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://sckosen2017.kisarazu.ac.jp/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fsckosen2017.kisarazu.ac.jp%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8&amp;iframe=card-small"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<pre style="line-height:120%">'+
+'<a href="https://153.126.191.68/">KOSEN セキュリティ・コンテスト 2018</a>'+
+'<h4><a href="https://www.seccon.jp/2019/seccon2019/seccon_reiwa_ctf.html">令和CTF</a></pre></h4>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://www.seccon.jp/2019/seccon2019/seccon_reiwa_ctf.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.seccon.jp%2F2019%2Fseccon2019%2Fseccon_reiwa_ctf.html&amp;key=dd60c159c87f40f1ecca839b51b281e8&amp;iframe=card-small"></a></div></div><script async src="https//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<pre style="line-height:120%">'+
+'writeup:<a href="https://qiita.com/Seigenkousya/items/2dc344c3bbe99b3b3d6c">https://qiita.com/Seigenkousya/items/2dc344c3bbe99b3b3d6c</a></pre>'+
+'<h4>KOSEN セキュリティ・コンテスト 2019</h4>'+
+'writeup:<a href="https://qiita.com/Seigenkousya/items/46078afbec2ddfc09d3f">https://qiita.com/Seigenkousya/items/46078afbec2ddfc09d3f</a>'+
+'<h4><a href="https://www.seccon.jp/2019/seccon2019/seccon_ctf_2019_quals.html">SECCON CTF 2019 公式予選</a></pre></h4>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://www.seccon.jp/2019/seccon2019/seccon_ctf_2019_quals.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.seccon.jp%2F2019%2Fseccon2019%2Fseccon_ctf_2019_quals.html&amp;key=dd60c159c87f40f1ecca839b51b281e8&amp;iframe=card-small"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<pre style="line-height:120%">'+
+'writeup:<a href="https://qiita.com/Seigenkousya/items/09cfe476a775f41d24e3">https://qiita.com/Seigenkousya/items/09cfe476a775f41d24e3</a></pre></div>';
+
 let ls_hobby=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
 '<button class="cd_link" type="button" onclick="back_to_root(\'Hobby\');">..</button>   '+
