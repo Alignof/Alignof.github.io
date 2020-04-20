@@ -228,11 +228,11 @@ let page_atcoder=
 '<h2>Atcoder</h2>'+
 '<h3>about</h3>'+
 '<pre style="line-height:120%">'+
-'競技プログラミングをはじめました。'+
-'自分はこういうのがすごい苦手なんだと分かりました。'+
-'これからちゃんと勉強して精進します。（猛省）'+
-'いつかはここに書いても恥ずかしくないくらいの実力になりたいですね...</pre>'+
-'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://atcoder.jp/users/Neuromancer" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fatcoder.jp%2Fusers%2FNeuromancer&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script></div>';
+'競技プログラミングをはじめました。\n'+
+'自分はこういうのがすごい苦手なんだと分かりました。\n'+
+'これからちゃんと勉強して精進します。（猛省）\n'+
+'いつかはここに書いても恥ずかしくないくらいの実力になりたいですね...\n</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://atcoder.jp/users/Neuromancer" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fatcoder.jp%2Fusers%2FNeuromancer&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script></div><br>';
 
 let ls_hobby=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
