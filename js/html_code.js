@@ -313,8 +313,7 @@ let ls_seigenkousya=
 '<button class="text_link" type="button" onclick="about_SIN();">about_us</button>   '+
 '<button class="text_link" type="button" onclick="blog();">homepage</button>   '+
 '<button class="text_link" style="color:red" type="button" onclick="SIN_link();">Seigenkousya.html</button>   '+
-'<button class="text_link" type="button" onclick="lilics();">Overview_of_modern_lilics</button>   '+
-'<button class="text_link" type="button" onclick="thesis();">doubiju_thesis</button>   '+
+'<button class="text_link" type="button" onclick="scraper();">kirara_scraper</button>   '+
 '<button class="text_link" type="button" onclick="kirara_data();">KiraraData.com</button>   '+
 '</pre></span></div>';
 

@@ -187,18 +187,13 @@ async function blog(){
 async function SIN_link(){
 	await message(cmd_path("Hobby/Seigenkousya","browther Seigenkousya.html"),2800);
 	// open new tab
+	window.open('https://seigenkousya.github.io/', '_blank');
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }
 
-async function lilics(){
-	await message(cmd_path("Hobby/Seigenkousya","cat Overview_of_modern_lilics"),3000);
-	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
-	await message(ls_seigenkousya,0);
-}
-
-async function thesis(){
-	await message(cmd_path("Hobby/Seigenkousya","cat doubiju_thesis"),2500);
+async function scraper(){
+	await message(cmd_path("Hobby/Seigenkousya","cat kirara_scraper"),2500);
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }
