@@ -151,6 +151,8 @@ async function anime(){
 
 async function motor_sports(){
 	await message(cmd_path("Hobby","motor sports"),2200);
+	await message(page_motor_sports,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby","ls -a"),2000);
 	await message(ls_hobby,0);
 }
@@ -167,12 +169,16 @@ async function SIN_dir(){
 
 async function about_SIN(){
 	await message(cmd_path("Hobby/Seigenkousya","cat about_us"),2000);
+	await message(page_about_SIN,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }
 
 async function blog(){
-	await message(cmd_path("Hobby/Seigenkousya","cat blog"),2000);
+	await message(cmd_path("Hobby/Seigenkousya","cat homepage"),2000);
+	await message(page_homepage,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }

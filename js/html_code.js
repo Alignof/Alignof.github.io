@@ -286,22 +286,78 @@ let page_anime=
 'アニメも見ます。\n'+
 'だいたいきらら系とSFだったり硬派なやつの両極端を抑えています。\n'+
 '攻殻機動隊S.A.C.とか東のエデンとかなつかしいですね。\n'+
-'最近のアニメも好きですが'90年代'00年代のアニメも素敵ですね。\n'+
+"最近のアニメも好きですが'90年代'00年代のアニメも素敵ですね。\n"+
 'こちらも見た作品はリスト化したいものです。\n'+
 '好きなシーズンは2018年秋アニメ。\n'+
 '</pre></div>';
 
+let page_motor_sports=
+'<div style="color:white;font-size:100%;">'+
+'<h2>motor sports</h2>'+
+'<pre style="line-height:120%">'+
+'あんまり人には言わないけど実はモータースポーツが好きです。\n'+
+'主にF1,F2,Formula E,WECあたりを見ます。\n</pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://www.formula1.com/en.html" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fwww.formula1.com%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8&amp;iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<pre style="line-height:120%">'+
+'Formula E:<a href="https://www.fiaformulae.com/">https://www.fiaformulae.com/</a>\n'+
+'WEC:<a href="https://www.fiawec.com/">https://www.fiawec.com/</a>\n'+
+'大抵は日本のチームとかドライバーを応援しますが、Formula Eは何故かマヒンドラを応援したくなります。\n'+
+'たまにWRC,SFあたりも見ますね。\n'+
+'現地で観戦したことがないのでいつかは行ってみたいです。\n'+
+'F1鈴鹿とモナコGPとル・マン24時間あたりは一生で一度は生で見に行きたいなぁ。\n'+
+'</pre></div>';
 
 let ls_seigenkousya=
 '<div id="ls_result"><span><pre><button class="cd_link" type="button">.</button>   '+
 '<button class="cd_link" type="button" onclick="back_to_hobby();">..</button>   '+
 '<button class="text_link" type="button" onclick="about_SIN();">about_us</button>   '+
-'<button class="text_link" type="button" onclick="blog();">blog</button>   '+
+'<button class="text_link" type="button" onclick="blog();">homepage</button>   '+
 '<button class="text_link" style="color:red" type="button" onclick="SIN_link();">Seigenkousya.html</button>   '+
 '<button class="text_link" type="button" onclick="lilics();">Overview_of_modern_lilics</button>   '+
 '<button class="text_link" type="button" onclick="thesis();">doubiju_thesis</button>   '+
 '<button class="text_link" type="button" onclick="kirara_data();">KiraraData.com</button>   '+
 '</pre></span></div>';
+
+let page_about_SIN=
+'<div style="color:white;font-size:100%;">'+
+'<h2>Seigenkousya</h2>'+
+'<pre style="line-height:120%">'+
+'あんまり言わないけれど趣味で同人活動してます。<br>\n'+
+'サークル名：正弦工社【セイゲンコウシャ】\n'+
+'<font color="cyan"><i class="fab fa-twitter-square"></i></font><a href="https://github.com/Seigenkousya"> @Seigenkousya</a>\n'+
+'Homepage：<a href="https://seigenkousya.github.io/">https://seigenkousya.github.io/</a></pre>\n'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ft.co%2Fzerx6Rxg8g%3Famp%3D1&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<pre style="line-height:120%">'+
+'<a href="http://github.com/seigenkousya" class="gh-contributions" data-gh-username="seigenkousya" target="_blank">seigenkousya\'s contributions</a><script src="https://ikuwow.github.io/yourcontributions/widget.min.js"></script>'+
+'ジャンル：技術,評論\n'+
+'といっても絵を描いたり小説を書いたりといったクリエイティブなことはできないので主にプログラム書いたり漫画の感想を投下したりしてます。\n'+
+'研究対象はきらら作品と百合についてがメインです。\n'+
+'最近は評論メインになっているのでここらで一発ドカンと良いものを開発したいものですね。\n'+
+'</pre></div>';
+
+let page_homepage=
+'<div style="color:white;font-size:100%;">'+
+'<h2>Homepage</h2>'+
+'<pre style="line-height:120%">'+
+'感想ブログ兼成果物発表の場として使ってる感じです。\n'+
+'Homepageはgithub pages+hugoで構築・運用しています。\n'+
+'hugoのテーマには<a href="https://themes.gohugo.io/hugo-theme-m10c/">m10c</a>を（かなり）改造して使ってます。\n'+
+'Homepage：<a href="https://seigenkousya.github.io/">https://seigenkousya.github.io/</a></pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ft.co%2Fzerx6Rxg8g%3Famp%3D1&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<h3>記事紹介</h3>'+
+'<pre style="line-height:120%">'+
+'せっかくなので普段どんな記事を書いているのか紹介します。\n'+
+'まんがタイムきららMAXの感想\n'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/tags/%25E3%2581%25BE%25E3%2582%2593%25E3%2581%258C%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25A0%25E3%2581%258D%25E3%2582%2589%25E3%2582%2589max/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fseigenkousya.github.io%2Ftags%2F%25E3%2581%25BE%25E3%2582%2593%25E3%2581%258C%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25A0%25E3%2581%258D%25E3%2582%2589%25E3%2582%2589max%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'まんがタイムきららキャラットの感想'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/tags/%25E3%2581%25BE%25E3%2582%2593%25E3%2581%258C%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25A0%25E3%2581%258D%25E3%2582%2589%25E3%2582%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2583%2583%25E3%2583%2588/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fseigenkousya.github.io%2Ftags%2F%25E3%2581%25BE%25E3%2582%2593%25E3%2581%258C%25E3%2582%25BF%25E3%2582%25A4%25E3%2583%25A0%25E3%2581%258D%25E3%2582%2589%25E3%2582%2589%25E3%2582%25AD%25E3%2583%25A3%25E3%2583%25A9%25E3%2583%2583%25E3%2583%2588%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'掲載順の可視化と分析'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/post/kirara_order_2020/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fseigenkousya.github.io%2Fpost%2Fkirara_order_2020%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'AA型Quineのプログラム'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/post/momone_aa/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fseigenkousya.github.io%2Fpost%2Fmomone_aa%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script><br>'+
+'こんな感じです。主に評論と研究がメインになってますね。\n'+
+'もう少し開発もしてここで紹介したいんですけどね...\n'+
+'</pre></div>';
 
 let tree_result=
 '<pre style="color:white;font-size:110%">'+
