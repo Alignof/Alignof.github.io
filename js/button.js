@@ -144,7 +144,6 @@ async function comic(){
 async function anime(){
 	await message(cmd_path("Hobby","cat anime"),2000);
 	await message(page_anime,0);
-	await reload_iframely();
 	await message(cmd_path("Hobby","ls -a"),2000);
 	await message(ls_hobby,0);
 }
@@ -194,6 +193,8 @@ async function SIN_link(){
 
 async function scraper(){
 	await message(cmd_path("Hobby/Seigenkousya","cat kirara_scraper"),2500);
+	await message(page_kirara_scraper,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }
