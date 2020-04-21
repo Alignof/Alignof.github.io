@@ -171,6 +171,7 @@ async function about_SIN(){
 	await message(cmd_path("Hobby/Seigenkousya","cat about_us"),2000);
 	await message(page_about_SIN,0);
 	await reload_iframely();
+	await reload_contribution();
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }

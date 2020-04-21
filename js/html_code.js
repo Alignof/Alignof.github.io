@@ -326,9 +326,9 @@ let page_about_SIN=
 'サークル名：正弦工社【セイゲンコウシャ】\n'+
 '<font color="cyan"><i class="fab fa-twitter-square"></i></font><a href="https://github.com/Seigenkousya"> @Seigenkousya</a>\n'+
 'Homepage：<a href="https://seigenkousya.github.io/">https://seigenkousya.github.io/</a></pre>\n'+
-'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ft.co%2Fzerx6Rxg8g%3Famp%3D1&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Ft.co%2Fzerx6Rxg8g%3Famp%3D1&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script><br>'+
+"<a href='http://github.com/seigenkousya' class='gh-contributions' data-gh-username='seigenkousya' target='_blank'>seigenkousya's contributions</a><script src='https://ikuwow.github.io/yourcontributions/widget.min.js'></script>"+
 '<pre style="line-height:120%">'+
-'<a href="http://github.com/seigenkousya" class="gh-contributions" data-gh-username="seigenkousya" target="_blank">seigenkousya\'s contributions</a><script src="https://ikuwow.github.io/yourcontributions/widget.min.js"></script>'+
 'ジャンル：技術,評論\n'+
 'といっても絵を描いたり小説を書いたりといったクリエイティブなことはできないので主にプログラム書いたり漫画の感想を投下したりしてます。\n'+
 '研究対象はきらら作品と百合についてがメインです。\n'+
