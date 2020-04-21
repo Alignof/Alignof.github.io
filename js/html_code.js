@@ -375,7 +375,36 @@ let page_kirara_scraper=
 '<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/post/kirara_order_2020/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fseigenkousya.github.io%2Fpost%2Fkirara_order_2020%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
 '<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:600px; padding-bottom: 0;"><a href="https://Seigenkousya.github.io/post/carat_order_2020/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fseigenkousya.github.io%2Fpost%2Fcarat_order_2020%2F&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script></div>';
 
-
+let page_kirara_database=
+'<div style="color:white;font-size:100%;">'+
+'<h2>kiraradata.com</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'<font color="yellow">只今建設中です...</font>'+
+'まんがタイムきらら系列の雑誌の掲載順等の情報を<a href="http://www.dokidokivisual.com/">http://www.dokidokivisual.com/</a>から取得しまとめるデータサイトにするつもりです。\n'+
+'repository：<a href="https://github.com/Seigenkousya/kirara_database">https://github.com/Seigenkousya/kirara_database</a></pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://github.com/Seigenkousya/kirara_database" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FSeigenkousya%2Fkirara_database&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<h3>扱うデータ（予定）</h3>'+
+'サイトで扱う予定のデータです。'+
+'<div style="display:flex;">'+
+'<div><h4>雑誌連載分</h4><ul>'+
+'<li><span>作品名<span/></li>'+
+'<li><span>作者名<span/></li>'+
+'<li><span>掲載雑誌<span/></li>'+
+'<li><span>掲載順（平均と推移）<span/></li>'+
+'<li><span>センターカラー数<span/></li>'+
+'<li><span>連載期間<span/></li>'+
+'<li><span>総話数<span/></li></ul></div>'+
+'<div><h4>単行本分</h4><ul>'+
+'<li><span>作品名<span/></li>'+
+'<li><span>作者名<span/></li>'+
+'<li><span>巻数<span/></li>'+
+'<li><span>発売日<span/></li>'+
+'<li><span>ISBN<span/></li>'+
+'<li><span>センターカラー数<span/></li>'+
+'<li><span>KR menu<span/></li>'+
+'<li><span>アマゾンのリンク<span/></li>'+
+'</ul></div></div>';
 
 let tree_result=
 '<pre style="color:white;font-size:110%">'+

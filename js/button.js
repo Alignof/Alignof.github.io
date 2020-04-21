@@ -201,6 +201,8 @@ async function scraper(){
 
 async function kirara_data(){
 	await message(cmd_path("Hobby/Seigenkousya","cat KiraraData.com"),2500);
+	await message(page_kirara_database,0);
+	await reload_iframely();
 	await message(cmd_path("Hobby/Seigenkousya","ls -a"),2000);
 	await message(ls_seigenkousya,0);
 }
