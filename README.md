@@ -1,3 +1,3 @@
 # Takana-Norimasa.github.io
-ポートフォリオです。
+ポートフォリオです。  
 link:[https://takana-norimasa.github.io/](https://takana-norimasa.github.io/)
