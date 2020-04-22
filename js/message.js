@@ -84,7 +84,7 @@ function time_update(){
 function message(text){
 	const p=new Promise(async(resolve,reject) => {
 		scroll_bottom();
-		await new Promise(r=>setTimeout(r, 300));
+		await new Promise(r=>setTimeout(r, 400));
 		time_update();
 		terget.insertAdjacentHTML('beforeend',text);
 		resolve();
