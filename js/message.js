@@ -11,7 +11,7 @@ let tail='<span class="time">['+Hour+':'+Min+':'+Sec+']</span></div>';
 let wait='<span class="terminal_0"><font color="#FFFFFF">wait...</font></span>'
 let hello=head+'<span class="terminal_1"><font color="#FFFFFF"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</font></span>'+tail;
 
-const tjs=function(num,res){
+const tjs=function(num,resolve){
 	$((".terminal_"+num)).t({
 		delay:1,		// start delay in seconds [default:0]
 		speed:40,               // typing speed (ms) [default:50]
@@ -32,9 +32,8 @@ const tjs=function(num,res){
 		// finished callback
 		fin:function(elm){
 			$('terminal_'+num).find('.t-caret').css({opacity:0});
-			console.log("tjs ended.");
 			counter++;
-			console.log(res());
+			resolve();
 		}       
 	})
 }
@@ -110,6 +109,5 @@ async function main_stream(){
 	await message(ls_root);
 }
 
-console.log("start");
 main_stream();
 
