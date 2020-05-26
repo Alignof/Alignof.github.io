@@ -33,7 +33,7 @@ let links=
 '<pre></pre><i class="fas fa-link"></i><a href="https://takana-norimasa.github.io/blog/"> https://takana-norimasa.github.io/blog/</a></pre>'+
 '<pre><i class="far fa-envelope"></i> official: j17423@kisarazu.kosen-ac.jp</pre>'+
 '<pre><i class="far fa-envelope"></i> sub: neuromancer_wg@outlook.jp</pre>'+
-'<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [main/technology]:<a href="https://twitter.com/lIlIIllIIIlIlIl"> @<font face="Arial" >lIlIIllIIIlIlIl</font></a></pre>'+
+'<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [main/technology]:<a href="https://twitter.com/303_See_0ther"> @<font face="Arial" >303_See_0ther</font></a></pre>'+
 '<pre><font color="cyan"><i class="fab fa-twitter-square"></i></font> [sub/tech&anime]:<a href="https://twitter.com/Seigenkousya"> @seigenkousya</a></pre>'+
 '<pre><i class="fab fa-github-square"></i> [main/works]:<a href="https://github.com/Takana-Norimasa"> Takana-Norimasa</a></pre>'+
 '<pre><i class="fab fa-github-square"></i> [sub/hobby]:<a href="https://github.com/Seigenkousya"> Seigenkousya</a></pre>'+
