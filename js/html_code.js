@@ -56,6 +56,7 @@ let ls_project=
 '<button class="cd_link" type="button" onclick="back_to_root(\'Project\');">..</button>   '+
 '<button class="text_link" type="button" onclick="IO_Unit();">I/O_Unit</button>   '+
 '<button class="text_link" type="button" onclick="timer_stoper();">Juggernaut</button>   '+
+'<button class="text_link" type="button" onclick="cc_sakura();">cc_sakura</button>   '+
 '<button class="text_link" type="button" onclick="repojitories();">Repositories</button>   '+
 '</pre></span></div>';
 
@@ -90,6 +91,63 @@ let page_IO_Unit=
 '<pre style="line-height:120%">'+
 '僕自身のSecHackでの活動については、~/portfolio/Activity/SecHack365に書いてあります。'+
 '</pre>';
+
+let page_cc_sakura=
+'<div style="color:white; font-size:100%; ">'+
+'<h2>cc_sakura</h2>'+
+'<h3>about</h3>'+
+'<pre style="line-height:120%">'+
+'C Compiler Sakura\n'+
+'趣味でCコンパイラを自作しています．\n'+
+'今は基本の四則演算に加えてポインタや配列が動いている感じです．\n'+
+'構文解析からアセンブラまで学べて楽しいです．\n'+
+'repository：<a href="https://github.com/Takana-Norimasa/cc_sakura">https://github.com/Takana-Norimasa/cc_sakura</a></pre>'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:90%; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/cc_sakura" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2Fcc_sakura&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
+'<h3>example</h3>'+
+'<pre style="line-height:120%">'+
+'int main(){42;} => 42\n'+
+'int main(){5+20-4;} => 21\n'+
+'int main(){5+6*7;} => 47\n'+
+'int main(){5*(9-6);} => 15\n'+
+'int main(){(-3+5)+15;} => 17\n'+
+'int main(){(-3*-2)+15;} => 21\n'+
+'int main(){5<4;} => 0\n'+
+'int main(){5>4;} => 1\n'+
+'int main(){12 == 12;} => 1\n'+
+'int main(){12 != 13;} => 1\n'+
+'int main(){int a; int b; int c; int d; a=3; b=2; c=12; d=17; (d-c)*(a+b);} => 25\n'+
+'int main(){int abc; int def; abc=3; def=2; abc+def;} => 5\n'+
+'int main(){return 2+3;} => 5\n'+
+'int main(){int a; int b; a=13; b=8; return a-b;} => 5\n'+
+'int main(){int a; a=0; if(3>2) a=1; a;} => 1\n'+
+'int main(){int a; a=0; if(3<2) a=1; a;} => 0\n'+
+'int main(){int a; int b; int c; a=2; b=3; c=a+b; if(a<b) c=b-a; c;} => 1\n'+
+'int main(){int a; int b; int c; a=2; b=3; c=a+b; if(a>b) c=b-a; c;} => 5\n'+
+'int main(){int a; int b; int c; a=2; b=3; if(a>b) c=b-a/a; else c=a+b*b-a; c;} => 9\n'+
+'int main(){int a; int b; int c; a=2; b=3; if(a<b) c=b-a/a; else c=a+b*b-a; c;} => 2\n'+
+'int main(){int a; a=10; while(a>0) a=a-1; a;} => 0\n'+
+'int main(){int a; a=10; while(a<0) a=a-1; a;} => 10\n'+
+'int main(){int a; int b; int c; a=2; b=3; c=5; if(a>b){a=a+b; a=a+c;} a;} => 2\n'+
+'int main(){int a; int b; int c; a=2; b=3; c=5; if(a<b){a=a+b; a=a+b+c;} a;} => 13\n'+
+'int func(){return 9;} int main(){int b; b=func(); b;} => 9\n'+
+'int func(){int a; a=9; return a;} int main(){int b; b=func(); b;} => 9\n'+
+'int func(int a){return a;} int main(){int b; b=func(1); b;} => 1\n'+
+'int add(int a,int b){return a+b;} int main(){int a; int b; a=2; b=3; add(a,b);} => 5\n'+
+'int add(int a,int b,int c){return a+b+c;} int main(){int a; int b; int c; a=2; b=3; c=4; add(a,b,c);} => 9\n'+
+'int fibo(int num){if(num==0){return 0;}if(num==1){return 1;} return fibo(num-1)+fibo(num-2);} int main(){fibo(10);} => 55\n'+
+'int main(){int a; int b; a=0; b=1; b=&a; a=10; *b;} => 10\n'+
+'int main(){int a; int b; int c; a=2; b=3; c=&b+8; *c;} => 2\n'+
+'int main(){int x; int *y; y=&x; *y=3; return x;} => 3\n'+
+'int main(){int x; int *y; int **z; y=&x; z=&y; **z=3; return x;} => 3\n'+
+'int main(){int x; sizeof(x);} => 4\n'+
+'int main(){int *x; sizeof(x);} => 8\n'+
+'int main(){int x; sizeof(&x);} => 8\n'+
+'int main(){int *x; sizeof((x));} => 8\n'+
+'int main(){int a[4]; *a=1; *(a+1)=2; int *p; p=a; return *p + *(p+1);} => 3\n'+
+'int main(){int a[4]; a[0]=1; return a[0];} => 1\n'+
+'int main(){int a[4]; a[0]=1; a[1]=2; return a[0]+a[1];} => 3\n'+
+'int main(){int a[5]; int sum; int i; sum=0; i=0; while(i<5){a[i]=i; i=i+1;} i=0; while(i<5){sum=sum+a[i]; i=i+1;} return sum;} => 10\n'+
+'</pre></div>';
 
 let page_jaggernaut=
 '<div style="color:white;font-size:100%;">'+
@@ -233,6 +291,7 @@ let page_atcoder=
 '競技プログラミングをはじめました。\n'+
 '自分はこういうのがすごい苦手なんだと分かりました。\n'+
 'これからちゃんと勉強して精進します。（猛省）\n'+
+'<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; width:90%; padding-bottom: 0;"><a href="https://github.com/Takana-Norimasa/ABC_practice" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2FTakana-Norimasa%2FABC_practice&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>'+
 'いつかはここに書いても恥ずかしくないくらいの実力になりたいですね...\n</pre>'+
 '<div class="iframely-embed"><div class="iframely-responsive" style="height:140px; width:600px; padding-bottom: 0;"><a href="https://atcoder.jp/users/Neuromancer" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fatcoder.jp%2Fusers%2FNeuromancer&amp;key=dd60c159c87f40f1ecca839b51b281e8"></a></div></div><script async src="https://cdn.iframe.ly/embed.js" charset="utf-8"></script></div><br>';
 
@@ -416,6 +475,7 @@ let tree_result=
 '├── <font color="#729FCF">Project/</font>\n'+
 '│   ├── IO Unit\n'+
 '│   ├── Juggernaut\n'+
+'│   ├── cc_sakura\n'+
 '│   └── Repositories\n'+
 '├── <font color="#729FCF">Activities/</font>\n'+
 '│   ├── <font color="#8AE234">chronlogy</font>\n'+
