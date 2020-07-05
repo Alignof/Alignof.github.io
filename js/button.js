@@ -221,9 +221,3 @@ async function back_to_hobby(){
 	await message(ls_hobby);
 }
 
-
-
-
-
-
-
