@@ -1,7 +1,6 @@
 async function read_localfile(path){
 	const response = await fetch(path, {});
 	const text = await response.text();
-	console.log(text);
 
 	return text;
 }
@@ -14,10 +13,10 @@ async function load_html(){
 	ls_root=await read_localfile("/pages/ls_root.html");
 
 	ls_project=await read_localfile("/pages/project/ls_project.html");
-	page_IO_Unit=await read_localfile("/pages/projectIO_Unit.html");
-	page_cc_sakura=await read_localfile("/pages/projectcc_sakura.html");
-	page_jaggernaut=await read_localfile("/pages/projectjaggernaut.html");
-	page_repositories=await read_localfile("/pages/projectrepositories.html");
+	page_IO_Unit=await read_localfile("/pages/project/IO_Unit.html");
+	page_cc_sakura=await read_localfile("/pages/project/cc_sakura.html");
+	page_jaggernaut=await read_localfile("/pages/project/jaggernaut.html");
+	page_repositories=await read_localfile("/pages/project/repositories.html");
 
 	ls_activities=await read_localfile("/pages/activities/ls_activities.html");
 	page_sechack365=await read_localfile("/pages/activities/sechack365.html");
