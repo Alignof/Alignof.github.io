@@ -8,7 +8,7 @@ const terget=document.getElementById('console');
 const head='<div><span class="name">Takana Norimasa </span>'+'<span class="path">~/portfolio > </span>';
 let tail='<span class="time">['+Hour+':'+Min+':'+Sec+']</span></div>';
 
-let wait='<span class="terminal_0"><font color="#FFFFFF">wait...</font></span>'
+let wait='<span class="terminal_0"><font color="#FFFFFF">loading...</font></span>'
 let hello=head+'<span class="terminal_1"><font color="#FFFFFF"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</font></span>'+tail;
 
 const tjs=function(num,resolve){
