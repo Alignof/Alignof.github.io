@@ -75,6 +75,14 @@ async function cc_sakura(){
 	await message(ls_project);
 }
 
+async function msweeper(){
+	await typing(cmd_path("Project","cat msweeper"));
+	await message(page_msweeper);
+	await reload_iframely();
+	await typing(cmd_path("Project","ls -a"));
+	await message(ls_project);
+}
+
 async function repojitories(){
 	await typing(cmd_path("Project","cat Repositories"));
 	await message(page_repositories);
