@@ -8,7 +8,7 @@ const terget=document.getElementById('console');
 const head='<div><span class="name">Takana Norimasa </span>'+'<span class="path">~/portfolio > </span>';
 let tail='<span class="time">['+Hour+':'+Min+':'+Sec+']</span></div>';
 
-let wait='<span class="terminal_0"><font color="#FFFFFF">wait...</font></span>'
+let wait='<span class="terminal_0"><font color="#FFFFFF">loading...</font></span>'
 let hello=head+'<span class="terminal_1"><font color="#FFFFFF"><del>Hello! Hackers!<ins>0.7</ins></del>cat welcome</font></span>'+tail;
 
 const tjs=function(num,resolve){
@@ -100,9 +100,9 @@ function reload_contribution(){
 }
 
 async function main_stream(){
-	await load_html();
 	await typing(wait);
-	await new Promise(r=>setTimeout(r, 300));
+	await load_html();
+	await new Promise(r=>setTimeout(r, 250));
 	await typing(hello);
 	await message(welcome_message);
 	await typing(cmd("whoami"));

@@ -59,9 +59,25 @@ async function timer_stoper(){
 	await message(ls_project);
 }
 
+async function Brainwash(){
+	await typing(cmd_path("Project","cat Brainwash"));
+	await message(page_brainwash);
+	await reload_iframely();
+	await typing(cmd_path("Project","ls -a"));
+	await message(ls_project);
+}
+
 async function cc_sakura(){
 	await typing(cmd_path("Project","cat cc_sakura"));
 	await message(page_cc_sakura);
+	await reload_iframely();
+	await typing(cmd_path("Project","ls -a"));
+	await message(ls_project);
+}
+
+async function msweeper(){
+	await typing(cmd_path("Project","cat msweeper"));
+	await message(page_msweeper);
 	await reload_iframely();
 	await typing(cmd_path("Project","ls -a"));
 	await message(ls_project);
