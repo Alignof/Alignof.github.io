@@ -102,7 +102,7 @@ function reload_contribution(){
 async function main_stream(){
 	await typing(wait);
 	await load_html();
-	await new Promise(r=>setTimeout(r, 250));
+	await new Promise(r=>setTimeout(r, 100));
 	await typing(hello);
 	await message(welcome_message);
 	await typing(cmd("whoami"));
