@@ -111,5 +111,11 @@ int main(){int a[]={0,1,2,3,4}; return a[4];} => 4
 int main(){int a[5]={0,1,2,3,4}; return a[4];} => 4
 int main(){int a[5]={0,1,2}; return a[4];} => 0
 int add(int x,int y){return x+y;} int main(){int a[5]={0,1,2,add(1,3),4}; return a[3];} => 4
+int main(){int x=3; int a=x++; return a+x;} => 7
+int main(){int x=3; int a=++x; return a+x;} => 8
+int main(){int x=3; int a=x--; return a+x;} => 5
+int main(){int x=3; int a=--x; return a+x;} => 4
+int main(){return 'a';} => 97
+int main(){int flag; char *hello="hello"; if(hello[1] == 'e') flag=1; else flag=0; return flag;} => 1
 OK
 </pre></div>
