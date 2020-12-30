@@ -21,6 +21,7 @@ async function load_html(){
 	page_repositories=await read_localfile("/pages/project/repositories.html");
 
 	ls_activities=await read_localfile("/pages/activities/ls_activities.html");
+	page_seccamp=await read_localfile("/pages/activities/seccamp.html");
 	page_sechack365=await read_localfile("/pages/activities/sechack365.html");
 	page_gurdian_project=await read_localfile("/pages/activities/gurdian_project.html");
 	page_iot_hackathon=await read_localfile("/pages/activities/iot_hackathon.html");

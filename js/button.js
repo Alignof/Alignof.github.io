@@ -107,6 +107,14 @@ async function chronology(){
 	await message(ls_activities);
 }
 
+async function seccamp(){
+	await typing(cmd_path("Activities","cat SecurityCamp"));
+	await message(page_seccamp);
+	await reload_iframely();
+	await typing(cmd_path("Activities","ls -a"));
+	await message(ls_activities);
+}
+
 async function sechack365(){
 	await typing(cmd_path("Activities","cat SecHack365"));
 	await message(page_sechack365);
