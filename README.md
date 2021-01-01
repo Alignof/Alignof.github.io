@@ -1,3 +1,3 @@
-# Takana-Norimasa.github.io
+# Alignof.github.io
 僕のポートフォリオです。  
-link:[https://takana-norimasa.github.io/](https://takana-norimasa.github.io/)
+link:[https://alignof.github.io/](https://alignof.github.io/)
