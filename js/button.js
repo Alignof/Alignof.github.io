@@ -53,7 +53,7 @@ async function IO_Unit(){
 
 async function timer_stoper(){
 	await typing(cmd_path("Project","cat Juggernaut"));
-	await message(page_jaggernaut);
+	await message(page_juggernaut);
 	await reload_iframely();
 	await typing(cmd_path("Project","ls -a"));
 	await message(ls_project);

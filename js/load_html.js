@@ -17,7 +17,7 @@ async function load_html(){
 	page_cc_sakura=await read_localfile("/pages/project/cc_sakura.html");
 	page_brainwash=await read_localfile("/pages/project/Brainwash.html");
 	page_msweeper=await read_localfile("/pages/project/msweeper.html");
-	page_jaggernaut=await read_localfile("/pages/project/jaggernaut.html");
+	page_juggernaut=await read_localfile("/pages/project/juggernaut.html");
 	page_repositories=await read_localfile("/pages/project/repositories.html");
 
 	ls_activities=await read_localfile("/pages/activities/ls_activities.html");
